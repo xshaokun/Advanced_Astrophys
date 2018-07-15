@@ -1,0 +1,71 @@
+\chapter{望远镜}
+\section{基础光学}
+\paragraph{斯涅尔定律}
+表示折射的规律，$n_{1\lambda}\sin\theta_1=n_{2\lambda}\sin\theta_2$
+
+\paragraph{透镜公式}
+${1\over f_\lambda}=(n_\lambda-1)\left({1\over R_1}-{1\over R_2} \right)$，其中$R_1$和$R_2$是折射面的曲率，凸面为正，凹面为负。
+
+透镜的\textbf{放大本领}可以用底片放大率（plate scale）表示
+\begin{equation}
+  {d\theta\over dy}={1\over f}
+\end{equation}
+
+可得透镜的焦距越大，相同角间距的两点能够呈现更大的像。但事实上无法通过简单的提高焦距来提升望远镜的性能，因为极小的角间距会产生衍射，因此存在一个受波长$\lambda$和光圈大小$D$（或孔距）限制的最小分辨角，表征透镜的\textbf{分辨本领}（瑞利判据）：
+\begin{equation}
+  \theta_\mathrm{min}=1.22{\lambda \over D}
+\end{equation}
+
+\paragraph{视宁度}
+望远镜显示图像的清晰度，取决于大气的湍流活动引起光线折射的程度。
+
+\paragraph{像差}
+透镜和镜面系统所带来的图像畸变称为像差（aberrations），包括
+\begin{itemize}
+  \item 色差，折射式望远镜由于折射率与波长有关，不同波长的光汇聚在不同焦平面上，可通过增加改正透镜来降低影响
+  \item 球差，球面镜的边缘比中心具有更强折射能力，使得平行光无法汇聚在一点，可通过设计（抛物面）消除
+  \item 彗差，抛物面镜对偏离光轴的光源的入射光不能汇聚在一点上，即焦距与入射光与光轴夹角有关，彗尾状的像而得名，可通过选择合适的表面曲率降低影响
+  \item 散光，透镜或镜面成像不在预定焦平面上，属于设计缺陷
+  \item 场曲，成像不在平面，而是在曲面上
+  \item 场变，底片放大率与到光轴的距离相关
+\end{itemize}
+
+望远镜的\textbf{获取光线的本领}称为照度$J\propto 1/F^2$，其中\textbf{焦比}$F\equiv f/D$。
+
+\section{望远镜}
+\paragraph{折射式}——叶凯士天文台
+\begin{itemize}
+  \item 角放大率$m=f_\mathrm{obj}/f_\mathrm{eye}$
+  \item 产生色差
+  \item 边缘支撑时间久了会变形
+  \item 热响应慢
+  \item 容易有设计缺陷
+\end{itemize}
+
+\paragraph{反射式}——卡塞格林望远镜、施密特望远镜
+\begin{itemize}
+  \item 只需要注意维护反射面
+  \item 主动光学
+  \item 各种设计
+\end{itemize}
+
+\paragraph{主动光学（active optics）}
+观测时温度变化和望远镜移动会导致镜面的形变，主动光学就可以通过在镜面后增加活塞改变镜面曲率，或每隔几分钟调整望远镜朝向来修正
+
+\paragraph{自适应光学（adaptive optics）}
+有了主动光学，观测误差来源主要就在大气湍流，自适应光学通过计算机可在曝光同时快速修正，通常可以在光路中插入一个小透镜，调整小透镜的曲率来调整焦点位置
+
+\paragraph{望远镜支架}——赤道仪式、高度-方位式
+
+\paragraph{射电望远镜}——FAST、VLA，
+可通过增大面积（综合孔径）和干涉（VLBI）的方式提高分辨率。
+\newline
+
+由于大气窗口，红外、紫外、x射线和伽马射线的望远镜需要发射到太空。
+\paragraph{红外望远镜}——Spitzer、Hershel
+
+\paragraph{紫外望远镜}——IUE国际紫外望远镜、EUVE极紫外探测器
+
+\paragraph{x射线望远镜}——Chandra、XMM-Newton
+
+\paragraph{伽马射线望远镜}——Fermi、悟空

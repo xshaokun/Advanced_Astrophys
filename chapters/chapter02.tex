@@ -1,0 +1,62 @@
+\chapter{天体力学}
+\section{牛顿力学}
+牛顿三大定律+万有引力定律
+
+联立动能和势能的关系$K=-U$,可得逃逸速度$v_{ves}=\sqrt{2GM/r}$
+
+\section{开普勒定律}
+在多体运动的研究中，使用{\bf 质心参考系}会更加方便，质心$\mathbf{R}\equiv {m_1 \mathbf{r}'_1+m_2
+\mathbf{r}'_2 \over m_1+m_2} $可代替多体系统的整体运动情况，折合质量$\mu \equiv {m_1m_2 \over m_1
++m_2}$可表征系统的能量分布情况，因此两体的位移矢量$\mathbf{r_1}$和$\mathbf{r_2}$可表示为：
+\begin{align}\label{eq:r}
+  \mathbf{r_1} &=-{\mu\over m_1}\mathbf r\\[2mm]
+  \mathbf{r_2} &=-{\mu\over m_2}\mathbf r
+\end{align}
+
+牛顿力学为开普勒定律提供了数学解释。
+\subsection{开普勒第一定律}
+{\bf 行星绕太阳运动的轨道是一个椭圆，太阳在椭圆的一个焦点上}。
+
+\begin{equation}
+  r={L^2/\mu^2 \over GM(1+e\cos\theta)}
+  \label{eq:kepler1}
+\end{equation}
+
+式\ref{eq:kepler1}为极坐标下的圆锥曲线，{\bf 折合质量受引力作用绕质心运动的轨迹是圆锥曲线（抛物线、双曲线、椭圆）}。
+
+\begin{equation}
+  L=\mu\sqrt{GMa(1-e^2)}
+\end{equation}
+
+其中$L$在圆周运动($e=0$）时最大，抛物线运动($e\rightarrow 1$）时趋于0。
+
+\subsection{开普勒第二定律}
+{\bf 行星和太阳的连线在相同时间间隔内扫过的面积相等}。
+
+\begin{equation}
+  v^2=G(m_1+m_2)({2\over r}-{1\over a})
+  \label{eq:kepler2}
+\end{equation}
+
+
+\subsection{开普勒第三定律}
+{\bf （周期）平方（半长轴）反比律，或调和定律}
+
+\begin{equation}
+  P^2={4\pi^2 \over G(m_1+m_2)}a^3\;\text{国际单位制}
+\end{equation}
+
+方便起见，有时可写成：
+\begin{equation}
+  p^2={1\over (m_1+m_2)}a^3
+  \label{eq:kepler3}
+\end{equation}
+其中$P$的单位是年，$a$的单位是AU，$m$的单位是太阳质量
+
+\section{维里定律}
+{\bf 对于引力束缚的平衡系统，平均动能总是平均势能的一半}
+\begin{equation}
+  -2\langle K \rangle=\langle U \rangle
+  \label{virial}
+\end{equation}
+
